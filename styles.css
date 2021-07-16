@@ -1,0 +1,15 @@
+.conteneur_header_nav
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hebergements, .activite, .inscription
+{
+    margin: 80px;
+}
+
+.logo
+{
+    height: 80px;
+}
