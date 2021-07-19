@@ -6,10 +6,44 @@
 
 .hebergements, .activite, .inscription
 {
-    margin: 80px;
+    margin: 40px;
 }
 
 .logo
 {
     height: 80px;
+}
+
+.zone_de_texte
+{
+    border: 1px solid black;
+}
+
+.Rechercher
+{
+    background-color: #0065FC;
+    width: 80px;
+    border: 1px solid black;
+}
+
+.search_nav
+{
+    display: flex;
+}
+
+.titre_filtres
+{
+    margin: 40px;
+}
+
+.filtres
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.economique, .familial, .romantique, .animaux_autorises
+{
+    border: 1px solid black;
+    margin: 40px;
 }
