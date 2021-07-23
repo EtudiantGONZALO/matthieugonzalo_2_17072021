@@ -1,0 +1,108 @@
+.header
+{
+    border: 1px solid black;
+    background-color: brown;
+    width: auto;
+    height: 80px;
+}
+
+.nav
+{
+    border: 1px solid black;
+    background-color: cyan;
+    width: auto;
+    height: 80px;
+}
+
+.hebergements_aside
+{
+    display: flex;
+    margin: 10px;
+
+}
+#paragraphe_hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-color: burlywood;
+    width: 1000px;
+    height: 600px;
+}
+
+.hotel_cannebiere, .hotel_port, .hotel_mouettes, .hotel_mer, .hotel_panier, .hotel_amina
+{
+    background-color: coral;
+    width: 280px;
+    height: 250px;
+    margin: 20px
+}
+
+.aside
+{
+    background-color: darkgreen;
+    width: 350px;
+    height: 600px;
+    margin-left: 20px;
+}
+
+.hotel_matin, .hotel_eau, .hotel_blanc
+{
+    background-color: darkgrey;
+    width: 250px;
+    height: 150px;
+    margin: 20px 0px 20px 20px;
+}
+
+.img_activites
+{
+    background-color: darkkhaki;
+    width: auto;
+    height: 600px;
+
+}
+
+#paragraphe_activites
+{
+    display: flex;
+}
+
+.vieux_port, .img_2_3, .calanques, .img_5_6
+{
+    background-color: darkviolet;
+    margin: 30px 15px 15px 15px;
+    width: 300px;
+    height: 500px;
+}
+
+.fort_pomegues, .longchamp
+{
+    background-color: dimgray;
+    width: 250px;
+    height: 250px;
+    margin: 10px 10px 10px 10px;
+}
+
+.ile_frioul, .notre_dame
+{
+    background-color: dimgray;
+    width: 250px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: midnightblue;
+    height: 200px;
+}
+
+.a_propos, .nos_hebergements, .assistance
+{
+    border: 1px solid black;
+    width: 400px;
+    height: 180px;
+}
