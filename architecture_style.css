@@ -1,9 +1,22 @@
 .header
 {
-    border: 1px solid black;
-    background-color: brown;
-    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
+}
+
+.logo
+{
+    height: 80px;
+}
+
+.hebergements
+{
+    border-top: 2px solid blue;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .nav
@@ -11,7 +24,34 @@
     border: 1px solid black;
     background-color: cyan;
     width: auto;
-    height: 80px;
+    height: 350px;
+}
+
+.search_barre
+{
+    display: flex;
+    line-height: 30px;
+}
+
+.icone_map
+{
+    width: 25px;
+    border: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.input_search
+{
+  border: 1px solid black;  
+}
+
+.bouton_rechercher
+{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+    width: 90px;
+    color: white;
 }
 
 .hebergements_aside
