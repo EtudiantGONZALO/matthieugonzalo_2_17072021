@@ -168,7 +168,7 @@
 .img_activites
 {
     background-color: darkkhaki;
-    width: auto;
+    width: 1170px;
     height: 600px;
 
 }
@@ -215,4 +215,54 @@
     width: 450px;
     margin-top: 50px;
     margin-left: 30px;
+}
+
+@media screen and (max-width:780px)
+{
+    .filtres
+    {
+        flex-wrap: wrap;
+    }
+
+    .hebergements_aside
+    {
+        flex-wrap: wrap;
+        margin: none;        
+    }
+
+    #paragraphe_hebergements
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+
+    .hotel_cannebiere, .hotel_port, .hotel_mouettes, .hotel_mer, .hotel_panier, .hotel_amina
+    {
+        margin: 15px;
+    }
+
+    .hotel_amina
+    {
+        margin-left: 50px;
+    }
+
+    .aside
+    {
+        margin-left: none;
+    }
+}
+
+@media screen and (max-width: 1170px) 
+{
+    .img_activites
+    {
+        height: auto;
+        width: 100%;
+    }
+
+    #paragraphe_activites
+    {
+        flex-wrap: wrap;
+    }
 }
