@@ -101,6 +101,11 @@
     display: flex;
 }
 
+.icone_information
+{
+    color: #0065FC;
+}
+
 .hebergements_aside
 {
     display: flex;
@@ -120,6 +125,7 @@
 
 .titre_hebergements
 {
+    font-size: 20px;
     width: 800px;
     margin-top: 30px;
     margin-left: 60px;
@@ -146,6 +152,13 @@
     background-color: white;
     border-radius: 0px 0px 30px 30px;
 
+}
+
+.icone_ml, .icone_fk, .icone_r
+{
+    display: flex;
+    justify-content: flex-end;
+    color: #0065FC;
 }
 
 .aside
@@ -239,17 +252,7 @@
 
     .hotel_cannebiere, .hotel_port, .hotel_mouettes, .hotel_mer, .hotel_panier, .hotel_amina
     {
-        margin: 15px;
-    }
-
-    .hotel_amina
-    {
-        margin-left: 50px;
-    }
-
-    .aside
-    {
-        margin-left: none;
+        margin: 10px 20px 20px 10px;
     }
 }
 
@@ -264,5 +267,11 @@
     #paragraphe_activites
     {
         flex-wrap: wrap;
+    }
+
+    .footer
+    {
+        flex-wrap: wrap;
+        height: auto;
     }
 }
