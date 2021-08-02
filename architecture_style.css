@@ -260,6 +260,11 @@ input
 
 /*activités*/
 
+#image_activites
+{
+    margin-left: 0;
+}
+
 .titre_activites
 {
     font-size: 20px;
@@ -270,6 +275,7 @@ input
 .paragraphe_activites
 {
     display: flex;
+    justify-content: space-around;
 }
 
 .vieux_port, .img_2_3, .calanques, .img_5_6
@@ -280,7 +286,6 @@ input
     border-radius: 30px;
     width: 250px;
     height: 500px;
-    margin: 0px 15px 10px 25px
 }
 
 .fort_pomegues, .longchamp
@@ -357,6 +362,7 @@ input
     height: 200px;
     width: 100%;
     margin: 50px 0px 0px 0px;
+    padding: 0%;
 }
 
 .a_propos, .nos_hebergements, .assistance
