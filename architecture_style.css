@@ -120,6 +120,7 @@ header
 
 .bouton_txt_filtres
 {
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -178,6 +179,7 @@ header
     margin-bottom: 30px;
     background-color: white;
     padding: 5px;
+    text-decoration: none;
 }
 
 .image_heb
@@ -192,11 +194,11 @@ header
     width: 200px;
     height: 80px;
     border-radius: 0px 0px 30px 30px;
+    text-decoration: none;
 }
 
 .icone_heb
 {
-    display: flex;
     font-size: x-small;
     color: #0065FC;
 }
@@ -240,6 +242,7 @@ header
     height: 150px;
     margin: 20px 0px 40px 20px;
     padding: 5px;
+    text-decoration: none;
 }
 
 .image_aside
@@ -263,7 +266,7 @@ header
     padding-top: 30px;
 }
 
-#paragraphe_activites
+.paragraphe_activites
 {
     display: flex;
 }
@@ -271,17 +274,18 @@ header
 .vieux_port, .img_2_3, .calanques, .img_5_6
 {
     display: block;
+    text-decoration: none;
     background-color: white;
     border-radius: 30px;
     width: 250px;
     height: 500px;
     margin: 0px 15px 10px 25px
-
 }
 
 .fort_pomegues, .longchamp
 {
     display: block;
+    text-decoration: none;
     background-color: white;
     width: 250px;
     height: 250px;
@@ -291,6 +295,7 @@ header
 .ile_frioul, .notre_dame
 {
     display: block;
+    text-decoration: none;
     background-color: white;
     width: 250px;
     height: 200px;
