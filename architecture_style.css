@@ -28,7 +28,8 @@ header
 
 .txt_nav:hover
 {
-    border-top: 1px solid #0065FC
+    padding-top: 15px;
+    border-top: 1px solid #0065FC;
 }
 
 .txt_nav_1_2:hover
