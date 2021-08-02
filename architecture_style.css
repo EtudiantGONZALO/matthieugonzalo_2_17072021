@@ -52,7 +52,6 @@ header
 .search_barre
 {
     display: flex;
-    line-height: 30px;
     margin-top: 20px;
 }
 
@@ -67,15 +66,16 @@ header
     background-color: #F2F2F2;
 }
 
-.input_search
+input
 {
-    border: 1px solid black;  
+    height: 30px;
 }
 
 .bouton_rechercher
 {
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 1px solid black;
     border-radius: 0px 10px 10px 0px;
     width: 90px;
