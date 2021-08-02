@@ -233,7 +233,7 @@ input
     margin-left: 40px;
 }
 
-.hotel_matin, .hotel_eau, .hotel_blanc
+.hotel_aside
 {
     display: block;
     display: flex;
@@ -260,11 +260,6 @@ input
 
 /*activités*/
 
-#image_activites
-{
-    margin-left: 0;
-}
-
 .titre_activites
 {
     font-size: 20px;
@@ -275,7 +270,7 @@ input
 .paragraphe_activites
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .vieux_port, .img_2_3, .calanques, .img_5_6
@@ -360,9 +355,7 @@ input
     justify-content: space-around;
     background-color: #F2F2F2;
     height: 200px;
-    width: 100%;
     margin: 50px 0px 0px 0px;
-    padding: 0%;
 }
 
 .a_propos, .nos_hebergements, .assistance
