@@ -166,7 +166,7 @@ input
 .hebergements
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -175,7 +175,7 @@ input
     display: block;
     justify-content: center;
     border-radius: 30px;
-    width: 200px;
+    width: 250px;
     height: 250px;
     margin-bottom: 30px;
     background-color: white;
@@ -186,19 +186,19 @@ input
 .image_heb
 {
     border-radius: 30px 30px 0px 0px;
-    width: 200px;
+    width: 250px;
     height: 170px;
 }
 
 .texte_heb
 {
-    width: 200px;
+    width: 250px;
     height: 80px;
     border-radius: 0px 0px 30px 30px;
     text-decoration: none;
 }
 
-.icone_heb
+.icone_blue
 {
     font-size: x-small;
     color: #0065FC;
@@ -206,6 +206,7 @@ input
 
 .afficher_plus
 {
+    font-weight: bold;
     margin: 30px 0px 30px 30px;
 }
 
@@ -213,24 +214,23 @@ input
 
 .aside
 {
-    width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
     border-radius: 30px;
     background-color: #F2F2F2;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .titre_populaires
 {
     display: flex;
+    width: 80%;
+    justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.icone_populaires
-{
-    margin-left: 40px;
 }
 
 .hotel_aside
@@ -239,9 +239,9 @@ input
     display: flex;
     background-color: white;
     border-radius: 30px;
-    width: 290px;
+    width: 350px;
     height: 150px;
-    margin: 20px 0px 40px 20px;
+    margin: 0 30px; 
     padding: 5px;
     text-decoration: none;
 }
@@ -249,13 +249,13 @@ input
 .image_aside
 {
     border-radius: 30px 0px 0px 30px;
-    width: 120px;
+    width: 40%;
     height: 150px;
 }
 
 .texte_aside
 {
-    padding: 15px
+    padding: 10px
 }
 
 /*activités*/
@@ -363,6 +363,11 @@ input
     width: 450px;
     margin-top: 50px;
     margin-left: 30px;
+}
+
+.footer a
+{
+    text-decoration: none;
 }
 
 /*querie*/
