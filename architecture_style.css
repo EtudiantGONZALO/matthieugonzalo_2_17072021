@@ -1,7 +1,12 @@
 body 
 {
     margin: 0;
-    padding: 0;
+    padding: 0;    
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url(elements_de_bases\police\Raleway-Black.ttf);
 }
 
 /*header*/
@@ -24,6 +29,8 @@ header
 {
     margin-left: 70px;
     text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
 .txt_nav:hover
@@ -50,6 +57,11 @@ header
     margin: 30px 5%;
 }
 
+.search > strong
+{
+    font-size: 30px;
+}
+
 .search_barre
 {
     display: flex;
@@ -67,9 +79,15 @@ header
     background-color: #F2F2F2;
 }
 
+.icone_map > i
+{
+    font-size: 20px;
+}
+
 input
 {
     height: 30px;
+    font-size: 20px;
 }
 
 .bouton_rechercher
@@ -79,9 +97,10 @@ input
     align-items: center;
     border: 1px solid black;
     border-radius: 0px 10px 10px 0px;
-    width: 90px;
+    width: 120px;
     color: white;
     background-color: #0065FC;
+    font-size: 20px;
 }
 
 .filtres
@@ -123,6 +142,8 @@ input
 {
     padding: 10px;
     text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
 .bouton_txt_filtres:hover
@@ -159,7 +180,7 @@ input
 
 .titre_hebergements
 {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 30px;
 }
 
@@ -196,6 +217,12 @@ input
     height: 80px;
     border-radius: 0px 0px 30px 30px;
     text-decoration: none;
+    color: black;
+}
+.texte_heb > strong
+{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .icone_blue
@@ -218,7 +245,6 @@ input
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 40%;
     border-radius: 30px;
     background-color: #F2F2F2;
     margin-left: 30px;
@@ -230,7 +256,7 @@ input
     width: 80%;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .hotel_aside
@@ -239,9 +265,9 @@ input
     display: flex;
     background-color: white;
     border-radius: 30px;
-    width: 350px;
+    width: 400px;
     height: 150px;
-    margin: 0 30px; 
+    margin: 0 20px; 
     padding: 5px;
     text-decoration: none;
 }
@@ -255,14 +281,21 @@ input
 
 .texte_aside
 {
-    padding: 10px
+    padding: 10px;
+    color: black;
+}
+
+.texte_aside > strong
+{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /*activités*/
 
 .titre_activites
 {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 30px;
     padding-top: 30px;
 }
@@ -318,28 +351,34 @@ input
     border-radius: 30px 30px 0px 0px;
 }
 
-.image_act_1_6
+.image_act_1_4
 {
     width: 250px;
-    height: 450px;
+    height: 425px;
     border-radius: 30px 30px 0px 0px;
 }
 
 .image_act_2_6
 {
     width: 250px;
-    height: 200px;
+    height: 175px;
 }
 
 .image_act_3_5
 {
     width: 250px;
-    height: 150px;
+    height: 125px;
 }
 
 .texte_act
 {
-    padding: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 75px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .box_shadow
@@ -368,6 +407,7 @@ input
 .footer a
 {
     text-decoration: none;
+    color: black;
 }
 
 /*querie*/
