@@ -212,11 +212,12 @@ input
 .texte_heb
 {
     width: 250px;
-    height: 70px
+    height: 70px;
     border-radius: 0px 0px 30px 30px;
     text-decoration: none;
     color: black;
 }
+
 .texte_heb > strong
 {
     font-size: 20px;
