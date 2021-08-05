@@ -394,7 +394,7 @@ input
 .footer
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #F2F2F2;
     height: 200px;
     margin-top: 50px;
@@ -410,7 +410,6 @@ input
 {
     width: 450px;
     margin-top: 50px;
-    margin-left: 30px;
 }
 
 .footer a
