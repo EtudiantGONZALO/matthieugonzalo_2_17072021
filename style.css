@@ -428,10 +428,21 @@ input
         flex-direction: column;
     }
 
+    .txt_nav
+    {
+        flex-wrap: wrap;
+    }
+
     .filtres
     {
         flex-direction: column;
         justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .bouton_filtres
+    {
+        margin-bottom: 30px;
     }
 
     #paragraphe_hebergements
@@ -444,9 +455,14 @@ input
     {
         margin: 40px 30px 40px 30px;
     }
+
+    #image_activites
+    {
+        margin: 0;
+    }
 }
 
-@media screen and (max-width: 1170px) 
+@media screen and (max-width: 1300px) 
 {
     .hebergements_aside
     {
