@@ -186,7 +186,6 @@ input
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 900px;
 }
 
 .hotel_heb
@@ -424,21 +423,26 @@ input
 
 @media screen and (max-width:780px)
 {
+    header
+    {
+        flex-direction: column;
+    }
+
     .filtres
     {
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     #paragraphe_hebergements
     {
         width: 100%;
         height: auto;
-        margin-bottom: 80px;
     }
 
-    .hotel_cannebiere, .hotel_port, .hotel_mouettes, .hotel_mer, .hotel_panier, .hotel_amina
+    .hotel_heb
     {
-        margin: 10px 20px 20px 10px;
+        margin: 40px 30px 40px 30px;
     }
 }
 
@@ -449,15 +453,20 @@ input
         flex-wrap: wrap;
     }
 
-    .img_activites
+    .aside
     {
-        height: auto;
         width: 100%;
+        margin-left: 0;
     }
 
-    #paragraphe_activites
+    .paragraphe_activites
     {
         flex-wrap: wrap;
+    }
+
+    .vieux_port, .img_2_3, .calanques, .img_5_6
+    {
+        margin-bottom: 50px;    
     }
 
     .footer
