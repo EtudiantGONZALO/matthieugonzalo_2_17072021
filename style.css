@@ -4,6 +4,11 @@ body
     padding: 0;    
 }
 
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url(elements_de_bases\police\Raleway-Regular.ttf) format("ttf");
+}
+
 /*header*/
 
 header
@@ -11,32 +16,39 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 80px;
-    width: 90%;
     margin: 0 5%;
 }
 
-.logo, .nav
+.logo, nav
 {
     height: 80px;
 }
 
+nav
+{
+    width: 35%;
+}
+
 .txt_nav
 {
-    margin-left: 70px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    text-decoration: none;
-    color: black;
     font-size: 20px;
 }
 
-.txt_nav:hover
+.deco_none
 {
-    padding-top: 10px;
+    text-decoration: none;
+}
+
+.titre_nav:hover
+{
+    padding-top: 20px;
     border-top: 1px solid #0065FC;
 }
 
-.txt_nav_1_2:hover
+.titre_nav_1_2:hover
 {
     color: #0065FC;
 }
@@ -45,6 +57,11 @@ header
 {
     font-weight: bold;
     color: #0065FC;
+}
+
+.black
+{
+    color: black;
 }
 
 /*search*/
@@ -83,7 +100,7 @@ header
 
 input
 {
-    height: 30px;
+    height: 50px;
     font-size: 20px;
 }
 
@@ -104,13 +121,14 @@ input
 {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
 .titre_filtres
 {
     margin-right: 30px;
+    font-size: 20px;
 }
 
 .bouton_filtres
@@ -119,8 +137,8 @@ input
     align-items: center;
     border: 2px solid #F2F2F2;
     border-radius: 30px 30px 30px 30px;
-    height: 30px;
-    margin-right: 30px;
+    height: 50px;
+    margin-right: 20px;
 }
 
 .icone_filtres
@@ -128,16 +146,16 @@ input
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
     color: #0065FC;
     background-color: #DEEBFF;
 }
 
 .bouton_txt_filtres
 {
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -156,7 +174,21 @@ input
 
 .icone_information
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #DEEBFF;
+    border-radius: 15px;
     color: #0065FC;
+    margin-right: 10px;
+}
+
+.texte_information
+{
+    color: grey;
 }
 
 /*hebergement+aside*/
@@ -412,7 +444,7 @@ input
     margin-top: 50px;
 }
 
-.footer a
+.footer > div > a
 {
     text-decoration: none;
     color: black;
