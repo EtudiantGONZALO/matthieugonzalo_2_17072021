@@ -4,11 +4,6 @@ body
     padding: 0;    
 }
 
-@font-face {
-    font-family: "Raleway-Regular";
-    src: url(elements_de_bases\police\Raleway-Regular.ttf) format("ttf");
-}
-
 /*header*/
 
 header
@@ -446,7 +441,7 @@ input
 
 .a_propos, .nos_hebergements, .assistance
 {
-    width: 450px;
+    width: 360px;
     margin-top: 50px;
 }
 
@@ -458,18 +453,8 @@ input
 
 /*querie*/
 
-@media screen and (max-width:780px)
+@media screen and (max-width:790px)
 {
-    header
-    {
-        flex-direction: column;
-    }
-
-    .txt_nav
-    {
-        flex-wrap: wrap;
-    }
-
     .filtres
     {
         flex-direction: column;
@@ -497,48 +482,43 @@ input
     {
         margin: 0;
     }
-}
-
-@media screen and (max-width: 1300px) 
-{
-    .hebergements_aside
-    {
-        flex-wrap: wrap;
-    }
-
-    .aside
-    {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .paragraphe_activites
-    {
-        flex-wrap: wrap;
-    }
-
-    .vieux_port, .img_2_3, .calanques, .img_5_6
-    {
-        margin-bottom: 50px;    
-    }
 
     .footer
     {
-        flex-wrap: wrap;
+        flex-direction: column;
         height: auto;
+        width: 100%;
+        margin-right: 0;
     }
 }
 
-@media screen and (max-width: 375px)
-{ /*hebergements+aside 370px*/
+
+@media screen and (max-width: 425px)
+{ 
+  /*header+nav*/
+
+    .logo
+    {
+        position: absolute;
+        left: 0;
+    }
+
+    .blue
+    {
+        position: absolute;
+        right: 0;
+    }
+  
+  /*hebergements+aside 425px*/
     .hebergements_aside
     {
+    flex-direction: column-reverse;
     margin-right: 0;
     padding-right: 0;
     margin-left: 0;
     }
 
-  /*hebergements 370px*/
+  /*hebergements 425px*/
 
   #paragraphe_hebergements 
   {
@@ -547,40 +527,34 @@ input
   
   .titre_hebergements
   {
-      font-size: 30px;
       margin-left: 15px;
   }
   
   .hotel_heb
   {
-      width: 360px;
+      width: 350px;
       height: 200px;
       margin-bottom: 30px;
       background-color: white;
       padding: 5px;
-      text-decoration: none;
       box-shadow: 10px 10px 10px #F2F2F2;
   }
   
   .image_heb
   {
-      border-radius: 30px 30px 0px 0px;
-      width: 100%;
+      width: 350px;
       height: 150px;
       object-fit: cover;
   }
   
   .texte_heb
   {
-      text-decoration: none;
-      color: black;
       padding-left: 20px;
   }
   
   .texte_heb > strong
   {
       font-size: 20px;
-      font-weight: bold;
   }
   
   .icone_blue
@@ -588,41 +562,29 @@ input
       font-size: x-small;
       color: #0065FC;
   }
-  
-  .afficher_plus
-  {
-      font-weight: bold;
-      margin: 30px 0px 30px 30px;
-  }
-  
-  /*aside 370px*/
-  
+    
+  /*aside 425px*/
   .aside
   {
-      justify-content: center;
-      align-items: center;
-      background-color: #F2F2F2;
-      border-radius: 0%;
+      border-radius: 0;
   }
   
   .titre_populaires
   {
-      font-size: 30px;
       margin-left: 15px;
   }
   
   .hotel_aside
   {
       background-color: white;
-      border-radius: 30px;
-      width: 340px;
+      width: 350px;
       height: 150px;
+      margin-left: 0;
   
   }
   
   .image_aside
   {
-      border-radius: 30px 0px 0px 30px;
       width: 40%;
       height: 150px;
       object-fit: cover;
@@ -634,61 +596,51 @@ input
       color: black;
   }
   
-  .texte_aside > strong
-  {
-      font-size: 20px;
-      font-weight: bold;
-  }
-
-  /*Activites 370px*/  
+  /*Activites 425px*/  
 
   #image_activites
   {
+      flex-wrap: wrap;
       margin: 0;
   }
   
   .titre_activites
   {
-      font-size: 30px;
       margin-left: 15px;
-      padding-top: 30px;
+      margin-top: 30px;
   }
   
   .paragraphe_activites
   {
-      display: flex;
-      justify-content: space-evenly;
       margin-bottom: 50px;
+      margin-left: 0;
+      padding: 0;
+      height: 100%;
   }
   
-  .vieux_port, .img_2_3, .calanques, .img_5_6
+  .vieux_port, .calanques
   {
-      display: block;
-      text-decoration: none;
-      background-color: white;
-      border-radius: 30px;
-      width: 360px;
+      width: 350px;
       height: 200px;
+  }
+
+  .img_2_3, .img_5_6
+  {
+      width: 360px;
+      height: auto;
+
   }
   
   .fort_pomegues, .longchamp
   {
-      display: block;
-      text-decoration: none;
-      background-color: white;
-      width: 100%;
+      width: 350px;
       height: 200px;
-      border-radius: 30px;
   }
   
   .ile_frioul, .notre_dame
   {
-      display: block;
-      text-decoration: none;
-      background-color: white;
-      width: 100%;
+      width: 350px;
       height: 200px;
-      border-radius: 30px;
   }
   
   .fort_pomegues
@@ -703,37 +655,31 @@ input
   
   .image_act_1_4
   {
-      width: 100%;
+      width: 350px;
       height: 150px;
-      border-radius: 30px 30px 0px 0px;
       object-fit: cover;
   }
   
   .image_act_2_6
   {
-      width: 100%;
+      width: 350px;
       height: 150px;
-      border-radius: 30px 30px 0 0;
       object-fit: cover;
   }
   
   .image_act_3_5
   {
-      width: 100%;
-      height: 150px;
-      border-radius: 30px 30px 0 0;
+      width: 350px;
+      height: 150p;
       object-fit: cover;
   }
   
   .texte_act
   {
-      width: 100%;
+      width: 350px;
       height: 50px;
       padding-top: 10px;
       padding-left: 20px;
-      color: black;
-      font-size: 20px;
-      font-weight: bold;
   }
   
   .box_shadow
@@ -741,14 +687,13 @@ input
       box-shadow: 10px 10px 10px #F2F2F2;
   }
 
-  /*footer*/
+  /*footer 425px*/
 
 .footer
 {
-    flex-direction: column;
     background-color: #F2F2F2;
-    height: 200px;
-    margin-top: 10px;
+    height: 100%;
+    margin-top: 50px;
 }
 
 .titre_footer
@@ -759,15 +704,62 @@ input
 
 .a_propos, .nos_hebergements, .assistance
 {
-    width: 375px;
-    margin-top: 10px;
+    margin-top: 30px;
+}
 }
 
-.footer > div > a
+@media screen and (min-width: 1622px)
 {
-    text-decoration: none;
-    color: black;
+    .hotel_heb
+    {
+        margin: 0 3%;
+    }  
 }
 
+@media screen and (min-width: 2170px)
+{
+    .hotel_heb
+    {
+        margin: 0 6%;
+    }
+}
 
+@media screen and (max-width: 1333px)
+{
+    .hebergements_aside
+    {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .hotel_heb
+    {
+        margin: 20px 10%;
+    }
+
+    .aside
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .paragraphe_activites
+    {
+        flex-wrap: wrap;
+        margin: 0 20%;
+    }
+    
+    .vieux_port, .img_2_3, .calanques, .img_5_6
+    {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1086px)
+{
+    .filtres
+    {
+        flex-wrap: wrap;
+    }    
 }
