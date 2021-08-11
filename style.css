@@ -108,6 +108,11 @@ input
     font-size: 20px;
 }
 
+.none
+{
+    display: none;
+}
+
 .filtres
 {
     display: flex;
@@ -493,20 +498,51 @@ input
 }
 
 
-@media screen and (max-width: 425px)
+@media screen and (max-width: 426px)
 { 
   /*header+nav*/
-
-    .logo
+    header
     {
-        position: absolute;
-        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .txt_nav
+    {
+        justify-content: space-evenly;
+        width: 350px;
     }
 
     .blue
     {
         position: absolute;
         right: 0;
+        top: 20px;
+    }
+
+    .black:hover
+    {
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+    }
+
+  /*search*/
+    .icone_map
+    {
+        width: 30px;
+    }
+
+    .bloc
+    {
+        display: none;
+    }
+
+    .none
+    {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
     }
   
   /*hebergements+aside 425px*/
