@@ -22,7 +22,7 @@ header
 
 nav
 {
-    width: 35%;
+    width: 50%;
 }
 
 .txt_nav
@@ -249,7 +249,7 @@ input
     border-radius: 30px;
     width: 250px;
     height: 250px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     background-color: white;
     padding: 5px;
     text-decoration: none;
@@ -323,8 +323,7 @@ input
     background-color: white;
     border-radius: 30px;
     width: 350px;
-    height: 150px;
-    margin: 0 20px; 
+    height: 150px; 
     padding: 5px;
     text-decoration: none;
     margin-bottom: 50px;
@@ -509,7 +508,7 @@ input
 
     .hotel_heb
     {
-        margin: 20px 5%;
+        margin: 20px 5% !important;
     }
 
     .hotel_aside
@@ -517,7 +516,6 @@ input
       width: 350px;
       height: 150px;
       margin-left: 0px;
-  
   }
   
   .image_aside
@@ -526,6 +524,7 @@ input
       height: 150px;
       object-fit: cover;
   }
+
     #image_activites
     {
         margin: 0;
@@ -549,11 +548,6 @@ input
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .logo
-    {
-        
     }
 
     .txt_nav
@@ -804,15 +798,15 @@ input
 {
     .hotel_heb
     {
-        margin: 0 3%;
+        margin: 0 1.5% 40px 1.5%;
     }  
 }
 
-@media screen and (min-width: 2170px)
+@media screen and (min-width: 1990px)
 {
     .hotel_heb
     {
-        margin: 0 6%;
+        margin: 0 4% 40px 0;
     }
 }
 
@@ -843,6 +837,11 @@ input
         width: 100%;
         margin-left: 0;
         margin-top: 30px;
+    }
+
+    .hotel_aside
+    {
+        margin: 20px 10px;
     }
 
     #image_activites
