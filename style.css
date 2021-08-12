@@ -2,6 +2,7 @@ body
 {
     margin: 0;
     padding: 0;    
+    font-family: 'Raleway', sans-serif;
 }
 
 /*header*/
@@ -28,8 +29,8 @@ nav
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     font-size: 20px;
+    border-top: 2px solid white;
 }
 
 .deco_none
@@ -37,9 +38,16 @@ nav
     text-decoration: none;
 }
 
+.titre_nav
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
 .titre_nav:hover
 {
-    border-top: 1px solid #0065FC;
+    border-top: 2px solid #0065FC;
     color: #0065FC;
 }
 
@@ -85,6 +93,10 @@ nav
 .icone_map > i
 {
     font-size: 20px;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input
@@ -94,6 +106,7 @@ input
     font-weight: bold;
     border: 1px solid #F2F2F2;
     padding-left: 20px;
+    max-width: 70%;
 }
 
 .bouton_rechercher
@@ -135,6 +148,7 @@ input
     border-radius: 30px 30px 30px 30px;
     height: 50px;
     margin-right: 20px;
+    margin-bottom: 20px;
     border: 2px solid #F2F2F2;
 }
 
@@ -201,8 +215,9 @@ input
 
 .hebergements_aside
 {
-    margin: 0 5%;
     display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
 }
 
 /*hebergement*/
@@ -211,6 +226,7 @@ input
 {
     background-color: #F2F2F2;
     border-radius: 30px;
+    max-width: 66%;
 }
 
 .titre_hebergements
@@ -276,12 +292,14 @@ input
 
 .aside
 {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     background-color: #F2F2F2;
     width: 33%;
-    margin-left: 20px;
+    
 }
 
 .titre_populaires
@@ -290,7 +308,13 @@ input
     justify-content: space-between;
     align-items: center;
     font-size: 30px;
-    margin: 0 30px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.icone_populaires
+{
+    margin-right: 30px;
 }
 
 .hotel_aside
@@ -458,8 +482,13 @@ input
 
 /*querie*/
 
-@media screen and (max-width:790px)
+@media screen and (max-width: 866px)
 {
+    .black
+    {
+        margin-right: 10px;
+    }
+
     .filtres
     {
         flex-direction: column;
@@ -480,9 +509,23 @@ input
 
     .hotel_heb
     {
-        margin: 40px 30px 40px 30px;
+        margin: 20px 5%;
     }
 
+    .hotel_aside
+  {
+      width: 350px;
+      height: 150px;
+      margin-left: 0px;
+  
+  }
+  
+  .image_aside
+  {
+      width: 40%;
+      height: 150px;
+      object-fit: cover;
+  }
     #image_activites
     {
         margin: 0;
@@ -500,11 +543,17 @@ input
 
 @media screen and (max-width: 426px)
 { 
-  /*header+nav*/
+  /*header+nav 425px*/
     header
     {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo
+    {
+        
     }
 
     .txt_nav
@@ -516,8 +565,15 @@ input
     .blue
     {
         position: absolute;
-        right: 0;
-        top: 20px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .black
+    {
+        justify-content: center;
+        width: 50%;
+        border-bottom: 2px solid #F2F2F2;
     }
 
     .black:hover
@@ -526,7 +582,7 @@ input
         border-bottom: 1px solid #0065FC;
     }
 
-  /*search*/
+  /*search 425px*/
     .icone_map
     {
         width: 30px;
@@ -662,7 +718,7 @@ input
 
   .img_2_3, .img_5_6
   {
-      width: 360px;
+      width: 350px;
       height: auto;
 
   }
@@ -764,8 +820,14 @@ input
 {
     .hebergements_aside
     {
+        margin: 0;
         flex-wrap: wrap;
         width: 100%;
+    }
+
+    #paragraphe_hebergements
+    {
+        max-width: 100%;
     }
 
     .hotel_heb
@@ -775,27 +837,40 @@ input
 
     .aside
     {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 100%;
         margin-left: 0;
         margin-top: 30px;
     }
 
+    #image_activites
+    {
+        margin-left: 0;
+        width: 100%;
+    }
+
     .paragraphe_activites
     {
         flex-wrap: wrap;
-        margin: 0 20%;
     }
     
     .vieux_port, .img_2_3, .calanques, .img_5_6
     {
-        margin-bottom: 50px;
+        margin: 25px 5%;
     }
 }
 
 @media screen and (max-width: 1086px)
 {
+    .black
+    {
+        margin-right: 10px;
+    }
+
     .filtres
     {
         flex-wrap: wrap;
-    }    
+    }
 }
