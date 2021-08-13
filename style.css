@@ -558,7 +558,7 @@ input
     .txt_nav
     {
         justify-content: space-evenly;
-        width: 350px;
+        width: 100%;
     }
 
     .blue
@@ -578,7 +578,8 @@ input
     .black:hover
     {
         border-top: none;
-        border-bottom: 1px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
     }
 
   /*search 425px*/
@@ -801,6 +802,11 @@ input
 
 @media screen and (min-width: 1622px)
 {
+    nav
+    {
+        width: 35%;
+    }
+    
     .hotel_heb
     {
         margin: 0 1.5% 40px 1.5%;
