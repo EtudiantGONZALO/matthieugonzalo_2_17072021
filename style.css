@@ -1,13 +1,15 @@
-body 
+/*général*/
+
+body
 {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     font-family: 'Raleway', sans-serif;
 }
 
 /*header*/
 
-header
+.header
 {
     display: flex;
     justify-content: space-between;
@@ -30,7 +32,6 @@ nav
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    border-top: 2px solid white;
 }
 
 .deco_none
@@ -45,12 +46,6 @@ nav
     align-items: center;
 }
 
-.titre_nav:hover
-{
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-}
-
 .blue
 {
     font-weight: bold;
@@ -60,6 +55,12 @@ nav
 .black
 {
     color: black;
+}
+
+.black:hover
+{
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
 }
 
 /*search*/
@@ -278,7 +279,7 @@ input
 
 .icone_blue
 {
-    font-size: x-small;
+    font-size: small;
     color: #0065FC;
 }
 
@@ -348,6 +349,12 @@ input
 {
     font-size: 20px;
     font-weight: bold;
+}
+
+.icone_blue_aside
+{
+    font-size: small;
+    color: #0065FC;
 }
 
 /*activités*/
@@ -455,7 +462,7 @@ input
 .footer
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #F2F2F2;
     height: 200px;
     margin-top: 50px;
@@ -469,8 +476,7 @@ input
 
 .a_propos, .nos_hebergements, .assistance
 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 5%;
 }
 
 .footer > div > a
@@ -547,8 +553,9 @@ input
 
 @media screen and (max-width: 426px)
 { 
-  /*header+nav 425px*/
-    header
+  /*header-nav 425px*/
+  
+    .header
     {
         display: flex;
         flex-direction: column;
@@ -644,11 +651,6 @@ input
       padding-left: 20px;
   }
   
-  .texte_heb > strong
-  {
-      font-size: 20px;
-  }
-  
   .icone_blue
   {
       font-size: x-small;
@@ -686,6 +688,11 @@ input
   {
       padding: 10px;
       color: black;
+  }
+
+  .icone_blue_aside
+  {
+      margin-top: 60px;
   }
   
   /*Activites 425px*/  
@@ -762,7 +769,7 @@ input
   .image_act_3_5
   {
       width: 350px;
-      height: 150p;
+      height: 150px;
       object-fit: cover;
   }
   
@@ -772,6 +779,7 @@ input
       height: 50px;
       padding-top: 10px;
       padding-left: 20px;
+
   }
   
   .box_shadow
