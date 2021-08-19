@@ -65,8 +65,9 @@ nav
 
 .gris
 {
-    color: grey;
+    color: gray;
 }
+
 /*search*/
 
 .search
@@ -466,7 +467,6 @@ input
 .footer
 {
     display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
     height: 200px;
     margin-top: 50px;
@@ -480,7 +480,7 @@ input
 
 .a_propos, .nos_hebergements, .assistance
 {
-    margin: 50px 5%;
+    margin: 50px 10%;
 }
 
 .footer > div > a
@@ -545,7 +545,7 @@ input
 
     .a_propos, .nos_hebergements, .assistance
     {
-        margin-left: 30px;
+        margin: 15px 30px;
     }
 }
 
@@ -559,6 +559,7 @@ input
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin: 0;
     }
 
     .titre_nav
