@@ -802,7 +802,12 @@ input
 
 .a_propos, .nos_hebergements, .assistance
 {
-    margin-top: 30px;
+    margin: 15px 30px;
+}
+
+.a_propos
+{
+    margin-top: 40px;
 }
 }
 
